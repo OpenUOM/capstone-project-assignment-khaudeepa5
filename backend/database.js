@@ -64,7 +64,6 @@ const addTeacher = async (id, name, age) => {
     });
 }
 
-
 const updateTeacher = async (name, age, id) => {
     const sql = 'UPDATE teacher SET name=?, age=? WHERE id=?'
     return new Promise((resolve, reject) => {
@@ -120,7 +119,6 @@ const readStudentInfo = async (id) => {
             });
     });
 }
-
 
 const addStudent = async (id, name, age, hometown) => {
     const sql = 'INSERT INTO student(id, name, age, hometown) VALUES (?, ?, ?, ?)'
